@@ -38,7 +38,12 @@
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject"
-        ]
+        ],
+        "post-install-cmd" : [
+            "@bowerLink",
+            "./init.sh"
+        ],
+        "bowerLink" : "[ -d vendor/bower ] || ln -s bower-asset vendor/bower"
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {
@@ -52,10 +57,6 @@
             "generateCookieValidationKey": [
                 "config/web.php"
             ]
-        },
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
         }
     }
 }
