@@ -23,7 +23,8 @@
         "yiisoft/yii2-httpclient": ">=2.0.0",
         "yiisoft/yii2-imagine": "*",
         "moonlandsoft/yii2-phpexcel": "*",
-        "yii2mod/yii2-ftp": "*"
+        "yii2mod/yii2-ftp": "*",
+        "insolita/yii2-migration-generator": "~2.3"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
